@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#090711"><title>ورود و ثبت‌نام | BlackLight</title><link rel="stylesheet" href="css/style.css"></head>
+<body class="auth-page">
+<header class="topbar"><a class="brand" href="index.html"><span class="brand-mark">B</span><span>BLACK<span class="purple">LIGHT</span></span></a><a class="back-link" href="index.html">بازگشت به سایت ←</a></header>
+<main class="auth-wrap"><section class="auth-card">
+  <div class="auth-logo">B<span>L</span></div><div class="eyebrow center">WELCOME TO BLACKLIGHT</div>
+  <h1 id="formTitle">ورود به حساب</h1><p class="muted center" id="formSubtitle">برای ادامه وارد حساب خود شوید.</p>
+  <div class="tabs"><button class="tab active" id="loginTab">ورود</button><button class="tab" id="registerTab">ثبت‌نام</button></div>
+  <form id="authForm" autocomplete="on">
+    <label for="username">نام کاربری</label><input id="username" name="username" minlength="3" maxlength="24" required autocomplete="username" placeholder="نام کاربری خود را وارد کنید">
+    <label for="password">رمز عبور</label><input id="password" name="password" type="password" minlength="8" required autocomplete="current-password" placeholder="حداقل ۸ کاراکتر">
+    <div class="form-hint" id="passwordHint">رمز عبور شما به‌صورت متن ساده ذخیره نمی‌شود.</div>
+    <button class="btn primary full" type="submit" id="submitBtn">ورود <span>←</span></button>
+  </form>
+  <div class="message" id="message" role="status" aria-live="polite"></div>
+  <p class="security-note">این نسخه آزمایشی فقط روی همین مرورگر حساب‌ها را نگه می‌دارد؛ برای حساب واقعی و مشترک، بک‌اند امن لازم است.</p>
+</section></main><script src="js/auth.js"></script></body></html>
